@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root {
+    --background-page: #FFF9E7;
+    --background-nav: #d36275;
+    --background-sobre: #ecb1c8;
+    --BACKGROUND-FOOTER: #29282B;
+
+    --cor-fonte-padrao: #000000;
+    --cor-fonte-nav: #ffffff;
+    --cor-fonte-by: #f1e5a1;
+    --cor-fonte-button-haver: rgb(245, 245, 185);
+
+    --lato-roboto: 'lato', Roboto;
+    --lato-cursiva: 'lato', cursive;
+
+    --cor-sombra: #C0C0C0;
+    --cor-sombra-hover: #f716d9;
+    --cor-button-hover: #f1e5a1;
+    --cor-placeholder-effect: #f716d9;
+}
+
+*{
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+
+}
+
+body{
+
+    font-family: var(--lato-cursiva);
+    color: var(--cor-fonte-padrao);
+    background-color: var(--background-page);
+
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.10rem;
+}
+
+h1,
+h2,
+h3,
+a {
+
+    letter-spacing: 3px;
+    font-weight: 800;
+
+}
+
+h2,
+h3{
+
+    text-align: center;
+
+}
+
+h1{
+
+    font-size: 2rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25;
+    text-align: left;
+}
+
+h2{
+
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+
+}
+
+h3{
+
+font-size: 1.5rem;
+margin-bottom: 2rem;
+
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+a:hover{
+
+    text-shadow: 0 0 5px var(--cor-sombra-hover);
+}
+
+nav{
+
+    margin: 0  auto;
+    width: 80vw;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    background-color: var(--background-nav);
+    box-shadow: 2px 2px 5px var(--gray);
+    font-size: 1.5rem;
+    color: var(--cor-fonte-nav);
+    padding: 2.25rem 1.5rem;
+
+}
+
+nav a,
+.titulo {
+
+    color: var(--cor-fonte-nav);
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+
+.logo{
+
+    display: flex;
+    width: 20%;
+    justify-content: left;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.icone{
+
+    width: 7rem;
+    padding-left: 1rem;
+
+}
+
+.titulo{
+    font-size: 2rem;
+}
+
+ul{
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+
+}
+
+main{
+
+    width: 80vw;
+    margin: 0 auto;
+
+}
+
+#sobre{
+
+    display: flex;
+    align-items: center;
+    padding-right: 1.5rem;
+    background-color: var(--background-sobre);
+    border-radius: 1rem;
+    text-align: justify; 
+
+}
+
+.texto_sobre{
+    margin: 1.75rem;
+}
+
+.foto {
+    width: 230px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px var(--gray);
+}
+
+#meu_video {
+    margin-bottom: 2rem;
+}
+
+.video {
+    width: 60vw;
+    aspect-ratio: 16/9;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    display: flex;
+
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-footer);
+}
+
+.redes_sociais {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+    gap: 1.25rem;
+
+    cursor: pointer;
+}
+
+.icons {
+    width: 3.25rem;
+    padding: 0 0.5rem;
+}
+
+.by {
+    display: flex;
+    padding-top: 0.75rem;
+    font-size: 1.25rem;
+    color: var(--cor-fonte-by);
+}
+
+hr {
+    margin: 1.25rem;
+}
+
+#contato {
+    width: 80vw;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+#formulario_mensagem {
+    width: 60vw;
+}
+
+#formulario_buscacep {
+    width: 40vw;
+}
+
+label {
+    font-family: var(--lato-roboto);
+    font-size: 1.15rem;
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
+input,
+textarea,
+button {
+    font-family: var(--lato-cursiva);
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 1.25rem;
+}
+
+input,
+textarea {
+    border: 1px solid orange;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--cor-placeholder-effect);
+}
+
+input:focus,
+textarea:focus {
+    /* Define as propriedades da borda do elemento selecionado */
+    outline: 1px solid orangered; 
+}
+
+button {
+    
+    background-color: var(--background-nav);
+    color: var(--cor-fonte-nav);
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid var(--cor-button-hover)
+}
+
+
+button:hover {
+    background-color: var(--cor-button-hover);
+    color: var(--cor-fonte-button-hover);
+}
+
+.campos-form {
+    margin-bottom: 1rem;
+}
+
+#txtNome,
+#txtEmail,
+#txtMensagem,
+#txtCep {
+    font-size: 1rem;
+    padding: 0.25rem 0;
+}
